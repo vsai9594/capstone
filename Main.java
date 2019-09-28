@@ -2,18 +2,19 @@ import java.io.*;
 import java.util.*;
 public class Main{
  public static void main(String args[]){
-	Scanner scan  = new Scanner(System.in);
-	System.out.println("Enter 1-4 for addition subtraction multiplication division");
-	int option  = scan.nextInt();
+		double a = 25;
+        double b = 5;
 	Operation operation=null; 
-	switch(option){
-		case 1: operation = new Addition();break;
-		case 2: operation = new Subtraction();break;
-		case 3: operation = new multiplication();break;
-		case 4: operation = new Division();break;	
-	}
-	double a = scan.nextDouble();
-        double b = scan.nextDouble();
-	System.out.println(operation.method(a,b));
+		 operation = new Addition();
+		 System.out.println(" Addition between "+a+" and "+b+" resulted in "+operation.method(a,b));
+		 operation = new Subtraction();
+		 System.out.println(" Subtraction between "+a+" and "+b+" resulted in "+operation.method(a,b));
+		 operation = new multiplication();
+		 System.out.println(" multiplication between "+a+" and "+b+" resulted in "+operation.method(a,b));
+		operation = new Division();
+System.out.println(" Division between "+a+" and "+b+" resulted in "+operation.method(a,b));		
+	
+
+	
  }
 }
